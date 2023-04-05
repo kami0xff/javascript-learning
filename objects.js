@@ -154,6 +154,13 @@ for (let key in user) {
     alert( user[key] ); // John, 30, true
 }
 
+//how are object properties sorted 
+//“ordered in a special fashion”: integer properties are sorted, others appear in creation order. 
+//integer properties are properties whose key can be converted to a number 
+//in the case of user7 the creation order would be name, age, isAdmin if we later added a key "1"
+//then it would be "1", name, age, isAdmin
+
+
 
 
 
