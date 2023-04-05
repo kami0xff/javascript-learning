@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="intro.js"></script>
+    <script src="hello_world.js"></script>
+    <!-- we can also get scripts from another URL through cdn urls in the src attribute -->
+    <!-- as a rule we only want the simplest scripts embedded directly into the html otherwise we rather 
+    src attributes to external files -->
+    <!-- also if the script is in a seperate file the browser will put it in the cache so it is 
+    only downloaded once even if multiple pages use the file -->
+    <!-- NOTE if src is set the content of the script tag will be ignored -->
+    <script>
+        let number = 111;
+    </script>
+    <script>
+        console.log(number);
+    </script>
+    <!-- the actual state of the javascript virtual machine / engine is not on a per script tag basis 
+    can think of it like a virtual machine in the background so we can set a variable in a script tag and 
+    console log it in another. -->
+</head>
+
+<body>
+    <h1>modern js tutorial</h1>
+    <script>
+        let body = document.getElementsByTagName("body");
+    </script>
+
+</body>
+</html>
